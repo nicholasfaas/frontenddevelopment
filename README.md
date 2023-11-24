@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nicholas Faas
 
   #### Je startniveau:
-  Rood
+  Startniveau: Rood
 
   #### Je focus:
-  Surface Plane
+  Focus: Surface plane
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.yourdisplaycase.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home 
+  <img src="readme-images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  About 
+  <img src="readme-images/screenshot2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -68,10 +68,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/screenshot1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/screenshot3.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -94,11 +94,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Nicholas:
+  - Hoe krijg ik een foto als achtergrond?
+  - Hoe krijg ik een achtergond dat gesplitst is in twee kleuren?
+  - Ik wil een margin links en rechts voor de hele pagina behalve de achtergonden
+
+  Daniel
+  - Hoe zorg ik ervoor dat mijn afbeeldig veranderd wanneer het scherm groter wordt?
+  - Hoe zet ik een linkje op een afbeelding?
+
+  Ruby
+  - Elementen hidden op scherm maar wel laten lezen door screenreaders
+  
+  Beyza
+  - Ik wil een video toevoegen, maar ik wil niet dat deze automatisch begint wanneer je de pagina opent. Ik wil dat je zelf kunt klikken om de video te starten.
 
 
   ### Verslag van meeting
