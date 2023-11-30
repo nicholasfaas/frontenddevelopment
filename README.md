@@ -143,7 +143,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Hoe voeg ik iconen toe?
 
   Daniel
-  - 
+  - ?
 
   Ruby
   - Uitklap menu maken
