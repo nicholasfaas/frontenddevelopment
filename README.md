@@ -94,9 +94,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  Nicholas:
+  Nicholas
   - Hoe krijg ik een foto als achtergrond?
-  - Hoe krijg ik een achtergond dat gesplitst is in twee kleuren?
   - Ik wil een margin links en rechts voor de hele pagina behalve de achtergonden
 
   Daniel
@@ -136,11 +135,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  Nicholas:
+  Nicholas
   - Hoe centreer ik mij background-image?
   - Hoe krijg ik er een oranje en donkere transparantie over heen?
-  - Hoe maak ik een toggle?
-  - Hoe voeg ik iconen toe?
 
   Daniel
   - ?
@@ -158,10 +155,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - background-position: center;
+  - background-image: url('../images/header.jpg'), linear-gradient(#0006 0 0); + background-blend-mode: overlay;
   - nog een punt
-- ...
+  - ...
 
 </details>
 
@@ -195,11 +192,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Nicholas:
+  - Foutmeldingen
+  - Lijn
+
+  Daniel
+  - ?
+
+  Ruby
+  - ?
+  
+  Beyza
+  - ?
 
 
   ### Verslag van meeting

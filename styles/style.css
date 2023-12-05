@@ -2,12 +2,19 @@
   box-sizing: border-box;  
 }
 
+:root {
+	--orange:#ff7400;
+	--white: #ffffff;
+	--black: #222222;
+	--shadow: #111111;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
   	font-size: 0.9em;
 	font-weight: 600;
-	color: #ffffff;
-    background-color: #222222;
+	color: var(--white);
+    background-color: var(--black);
 	margin: 0;
 }
 
@@ -15,9 +22,10 @@ nav {
 	position: fixed;
 	inset: 0;
 	translate: 0 100%;
-	background-color: #ffffff;
+	background-color: var(--white);
 	background-size: cover;
 	padding: 1em 2em;
+	z-index: 1;
 }
 
 nav.open {
@@ -26,30 +34,41 @@ nav.open {
 
 nav ul {
 	list-style-type: none;
-	background-color: #ffffff;
+	background-color: var(--white);
 	padding: 0;
 	margin: 0;
 }
 
 nav ul button {
-	width: 2.5em;
-	height: 2.5em;
+	width: 3em;
+	height: 3em;
 	display: block;
+	border: none;
+	cursor: pointer;
+	border-radius: .1em;
+	background-color: transparent;
 	margin-left: auto;
 	margin-top: 0.8em;
+	padding: 0;
+}
+
+nav ul button img {
+	width: 3em;
+	padding: 0;
+	margin: 0;
 }
 
 nav ul li {
 	text-align: center;
-	color: #222222;
+	color: var(--black);
 	font-size: 1.2em;
 	font-weight: 400;
 	display: block;
 	padding: 0.9em 0;
 }
 
-nav ul li.active {
-	color: #ff7400;
+nav ul li:nth-of-type(1) {
+	color: var(--orange);
 }
 
 main > * {
@@ -58,8 +77,12 @@ main > * {
 
 header {
 	height: 44em;
-	background-image: url('../images/header.jpg');
+	background-image: 
+		url('../images/header.jpg'),
+		linear-gradient(#0006 0 0);
 	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
 }
 
 header div {
@@ -75,59 +98,115 @@ header div img {
 }
 
 header button {
-	width: 2.5em;
-	height: 2.5em;
-	background-color: #ff7400;
+	width: 3em;
+	height: 3em;
+	background-color: var(--orange);
 	border: none;
 	cursor: pointer;
+	border-radius: .1em;
+	padding: 0;
+	margin-top: 0.8em;
 }
 
-header hr {
-	width: 3.2em;
-	height: 0.3em;
-	background-color: #ffffff;
+header button img {
+	width: 3em;
+	padding: 0;
 	margin: 0;
-	border: none;
+}
+
+header h1::before {
+	content:"";
+	background-color: var(--white);
+	position: absolute;
+	top: 0;
+	width: 1em;
+	height: .085em;
 }
 
 header h1 {
+	position: relative;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 500;
 	font-size: 3.2em;
 	width: 6.3em;
 	line-height: 1.2em;
+	padding: .6em 0;
+	margin: 0;
 }
 
 header p {
 	line-height: 1.9em;
 	width: 20em;
-	margin-top: 2em;
-	margin-bottom: 4em;
+	padding-bottom: 3.2em;
+	margin: 0;
 }
 
 header a {
 	padding: 0.7em 1.85em;
-	color: #222222;
-	background-color: #ffffff;
+	color: var(--black);
+	background-color: var(--white);
 	border-radius: 2em;
 }
 
 main > section:nth-of-type(1) {
-	background-color: #ffffff;
-	color: #222222;
-	height: 32em;
+	background-color: var(--white);
+	color: var(--black);
 }
 
 main > section:nth-of-type(1) section {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 }
 
 main > section:nth-of-type(1) p {
 	font-size: 1em;
-	margin: 4em 0 2em 0;
-	width: 7.5em;
-	text-align: center;
+	margin: 4em 0em 2em 0em;
+}
+
+/* https://codepen.io/mburnette/pen/LxNxNg */
+/* regel 152-192 */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -1000%;
+	width: 4em;
+	height: 2em;
+	background: var(--orange);
+	display: block;
+	border-radius: 2em;
+	position: relative;
+	margin: 4em 2em 2em 2em;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: .2em;
+	left: .2em;
+	width: 1.6em;
+	height: 1.6em;
+	background: #fff;
+	border-radius: 2em;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--black);
+}
+
+input:checked + label:after {
+	left: calc(100% - .2em);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 2em;
 }
 
 main > section:nth-of-type(1) h2 {
@@ -142,6 +221,7 @@ main > section:nth-of-type(1) img {
 	width: 100%;
 	display: block;
 	margin-top: 1em;
+	padding-bottom: 4em;
 }
 
 main > section:nth-of-type(2) {
@@ -149,14 +229,14 @@ main > section:nth-of-type(2) {
 }
 
 main > section:nth-of-type(2) section:nth-of-type(1) {
-	box-shadow: #111111 0 0 4em 0.1em;
+	box-shadow: var(--shadow) 0 0 4em 0.1em;
 	border-radius: 1em;
 	margin-top: 4em;
 	padding: 3em 2.5em 4em 2.5em;
 }
 
 main > section:nth-of-type(2) section:nth-of-type(2) {
-	box-shadow: #111111 0 0 4em 0.1em;
+	box-shadow: var(--shadow) 0 0 4em 0.1em;
 	border-radius: 1em;
 	margin: 2em 0 4em 0;
 	padding: 3em 2.5em 4em 2.5em;
@@ -177,46 +257,49 @@ main > section:nth-of-type(2) p {
 
 main > section:nth-of-type(2) a {
 	padding: 0.7em 1.85em;
-	color: #ffffff;
-	background-color: #ff7400;
+	color: var(--white);
+	background-color: var(--orange);
 	border-radius: 2em;
 }
 
 main > section:nth-of-type(3) {
-	background-color: #ffffff;
-	color: #222222;
+	background-color: var(--white);
+	color: var(--black);
 	text-align: center;
-	padding: 2em;
+	padding: 0 2em;
 }
 
 main > section:nth-of-type(3) h2 {
+	position: relative;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 500;
 	font-size: 2.2em;
+	padding: 1.2em 0;
+	margin: 0;
 }
 
-main > section:nth-of-type(3) hr {
-	width: 4.4em;
-	height: 0.3em;
-	background-color: #ff7400;
-	text-align: center;
-	margin: 0;
-	border: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+main > section:nth-of-type(3) h2::after {
+	content:"";
+	background-color: var(--orange);
+	position: absolute;
+	bottom: 0;
+	width: 2em;
+	height: .14em;
+	left: calc(50% - 1em);
 }
 
 main > section:nth-of-type(3) p:nth-of-type(1) {
 	font-weight: 400;
 	line-height: 1.8em;
-	margin: 2em 0 0 0;
+	padding-top: 2em;
+	margin: 0;
 }
 
 main > section:nth-of-type(3) p:nth-of-type(2) {
 	font-weight: 400;
 	line-height: 1.8em;
-	margin: 1em 0 2em 0;
+	padding: 1em 0 3em 0;
+	margin: 0;
 }
 
 footer {
@@ -233,18 +316,43 @@ footer h2 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 	font-size: 1.1em;
-	margin: 1.6em 0 0 0;
+	margin: 2em 0 1.6em 0;
 }
 
-footer p:nth-of-type(1) {
-	margin: 1.6em 0 0 0;
+footer section {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 2em;
+}
+
+footer section img {
+	width: 1.2em;
+	margin: 0;
+}
+
+footer p {
 	font-weight: 400;
 	line-height: 1.8em;
+	margin: 0;
 }
 
 footer h3 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	font-size: 1.6em;
-	margin: 4em 0 0 0;
+	margin: 2em 0 .8em 0;
+}
+
+footer p:nth-of-type(13), footer p:nth-of-type(15), footer p:nth-of-type(17) {
+	margin-bottom: 2em;
+}
+
+footer p:nth-of-type(16), footer p:nth-of-type(17) {
+	font-size: .8em;
+	color: var(--orange);
+}
+
+footer p a {
+	color: var(--white);
 }
