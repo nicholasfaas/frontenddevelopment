@@ -57,6 +57,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - HTML niet gevalideerd
+  - Viewport zoom disabled
+  - Skip heading levels
+  - Images zonder alt atrtribute
 
 </details>
 
@@ -72,9 +76,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/screenshot3.png" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -140,7 +141,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Hoe krijg ik er een oranje en donkere transparantie over heen?
 
   Daniel
-  - ?
+  - Geen vragen
 
   Ruby
   - Uitklap menu maken
@@ -173,7 +174,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  - Toegankelijkheidstest niet gedaan
 </details>
 
 
@@ -193,26 +194,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   Nicholas:
-  - Foutmeldingen
-  - Lijn
+  - Geen vragen
 
   Daniel
-  - ?
+  - Hoe kan ik ervoor zorgen dat wanneer mijn schermbreedte groter is, mijn grid aanpast van 1 naar 4 vakjes?
 
   Ruby
-  - ?
+  - Geen vragen
   
   Beyza
-  - ?
+  - Tekst aan afbeeldingen van hamburger menu toevoegen
 
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -254,8 +246,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/mburnette/pen/LxNxNg
+  2. https://codepen.io/shooft/pen/abmLPwy
 
 </details>
